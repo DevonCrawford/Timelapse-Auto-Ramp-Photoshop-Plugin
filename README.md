@@ -1,6 +1,6 @@
 # Timelapse-Auto-Ramp
 
-My favourite code project so far. 
+My favourite project so far. 
 
 Analyzes a sequence of RAW images (.xmp files) and automatically ramps the exposure to achieve smooth lighting results when changing a setting on the camera. 
 
