@@ -13,5 +13,5 @@ How to use:
   - go into main class "proRaw.java", set the folder to specified location of images
   - set startImage to the first image number in sequence
   
-  debugging:
-    - comment out updateMetadata(); to stop overwriting of new exposure metadata
+debugging:
+  - comment out updateMetadata(); to stop overwriting of new exposure metadata
