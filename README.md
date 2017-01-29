@@ -6,14 +6,9 @@ Analyzes a sequence of RAW images (.xmp files) and automatically ramps the expos
 
 My algorithm simply looks for changes in shutter speed, aperture, iso, then mathematically calculates the exposure offset required to match the difference between a change in two pictures, evenly applies the exposure change across leading images, and writes new exposure to the RAW (.xmp) files. This allows for a reopening of after effects to view these changes with no issue, and use the ramped values when rendering. This makes best use in difficult lighting conditions such as a timelapse of a sunrise, where your best option is to change the exposure manually, as the sun rises. If you did not use this technique you will notice flickering on auto mode, or stick with one setting on manual, making some parts too dark and others too bright. 
 
-Examples..
-
-Original Timelapse:
+Example. Original (top) vs Processed (bottom)
 
 ![original](https://cloud.githubusercontent.com/assets/25334129/22401502/5c70d636-e5a3-11e6-9773-4dc66a50ce74.gif)
-
-Processed Timelapse:
-
 ![processed](https://cloud.githubusercontent.com/assets/25334129/22401512/d0eaeaba-e5a3-11e6-8f53-bd3bbbc80438.gif)
 
 How to use:
