@@ -9,7 +9,7 @@ Example. Original (left) vs Processed (right)
 ![examples](https://cloud.githubusercontent.com/assets/25334129/22401628/1e86ca5a-e5a9-11e6-904b-ace3d74c7ed5.gif)
 
 How to use:
-  - manually change camera settings when needed to achieve good lighting
+  - manually change camera settings when shooting to achieve good lighting
   - this will create ugly flickering for a timelapse, but my program is made to even out this change
   - edit images in photostop lightroom, be sure to SAVE METADATA TO FILE, which creates .xmp files for my program to use
   - go into main class "proRaw.java", set the folder to specified location of images
