@@ -9,9 +9,11 @@ My algorithm simply looks for changes in shutter speed, aperture, iso, then math
 Examples..
 
 Original Timelapse:
+
 ![original](https://cloud.githubusercontent.com/assets/25334129/22401502/5c70d636-e5a3-11e6-9773-4dc66a50ce74.gif)
 
 Processed Timelapse:
+
 ![processed](https://cloud.githubusercontent.com/assets/25334129/22401512/d0eaeaba-e5a3-11e6-8f53-bd3bbbc80438.gif)
 
 How to use:
