@@ -9,7 +9,7 @@ My algorithm simply looks for changes in shutter speed, aperture, iso, then math
 Examples..
 
 Original Timelapse:
-https://cloud.githubusercontent.com/assets/25334129/22401502/5c70d636-e5a3-11e6-9773-4dc66a50ce74.gif
+![original](https://cloud.githubusercontent.com/assets/25334129/22401502/5c70d636-e5a3-11e6-9773-4dc66a50ce74.gif)
 
 How to use:
   - manually change camera settings when needed to achieve good lighting
