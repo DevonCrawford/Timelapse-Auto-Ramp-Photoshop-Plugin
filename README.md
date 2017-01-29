@@ -4,7 +4,7 @@ My favourite project so far.
 
 Analyzes a sequence of RAW images (.xmp files) and automatically ramps the exposure to achieve smooth lighting results when changing a setting on the camera. 
 
-Example. Original (top) vs Processed (bottom)
+Example. Original (left) vs Processed (right)
 
 ![examples](https://cloud.githubusercontent.com/assets/25334129/22401628/1e86ca5a-e5a9-11e6-904b-ace3d74c7ed5.gif)
 
