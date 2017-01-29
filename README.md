@@ -10,7 +10,7 @@ Example. Original (left) vs Processed (right)
 
 How to use:
   - manually change camera settings when shooting to achieve good lighting
-  - this will create ugly flickering for a timelapse, but my program is made to even out this change
+  - this will create flickering for a timelapse, but my program is made to even out this change
   - edit images in photostop lightroom, be sure to SAVE METADATA TO FILE, which creates .xmp files for my program to use
   - go into main class "proRaw.java", set the folder to specified location of images
   - set startImage to the first image number in sequence
