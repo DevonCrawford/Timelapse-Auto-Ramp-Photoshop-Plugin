@@ -9,7 +9,7 @@ My algorithm simply looks for changes in shutter speed, aperture, iso, then math
 Examples..
 
 Original Timelapse:
-
+![alt tag](https://raw.githubusercontent.com/DevonCrawford/Timelapse-Auto-Ramp/tree/master/examples/original.gif)
 
 How to use:
   - manually change camera settings when needed to achieve good lighting
