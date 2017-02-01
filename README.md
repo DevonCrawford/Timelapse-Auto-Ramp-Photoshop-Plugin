@@ -18,5 +18,7 @@ My algorithm simply looks for changes in shutter speed, aperture, iso, then math
   - run by typing "java -jar proRAW.jar"
   - input the file path of the first image
   
+![capture](https://cloud.githubusercontent.com/assets/25334129/22497738/c0901156-e821-11e6-9e15-04303fca7e5c.PNG)
+  
 ### Debugging:
   - comment out updateMetadata(); to stop overwriting of new exposure metadata
