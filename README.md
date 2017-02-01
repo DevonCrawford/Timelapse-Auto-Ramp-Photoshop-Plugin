@@ -10,7 +10,7 @@ My algorithm simply looks for changes in shutter speed, aperture, iso, then math
 
 How to use:
   - manually change camera settings when shooting to achieve good lighting
-  - this will create flickering for a timelapse, but my program is made to even out this change
+  - this will create a flicker during the timelapse, but my program is made to even out this change
   - edit images in photostop lightroom, be sure to SAVE METADATA TO FILE, which creates .xmp files for my program to use
   - go into main class "proRaw.java", set the folder to specified location of images
   - set startImage to the first image number in sequence
