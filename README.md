@@ -24,3 +24,5 @@ My algorithm simply looks for changes in shutter speed, aperture, iso, then math
   - comment out updateMetadata(); to stop overwriting of new exposure metadata
 
 Note: This program currently has no GUI therefore when you click on the .jar file it appears to not open. Make sure you open the file in command prompt following the instructions above.
+
+  *a project by Devon Crawford.*
