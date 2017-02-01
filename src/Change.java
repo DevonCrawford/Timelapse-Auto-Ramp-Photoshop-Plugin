@@ -1,6 +1,14 @@
 import java.io.File;
 import java.util.ArrayList;
 
+/* All changes need to store similar data. This class is used as
+ * the main object to store any setting change between images.
+ * Other objects inherit this class, adding data, such as exposure
+ * change, temperature change, etc. 
+ * 
+ * by Devon Crawford
+ */
+
 public class Change {
 
 	Util util = new Util();
@@ -9,6 +17,7 @@ public class Change {
 	protected int lastListNum, startListNum;
 	protected int totalImages;
 	
+	// Initializing change data
 	public Change(ArrayList<Image> imgs, int sln, int pln) {
 		images = imgs;
 		startListNum = sln;
@@ -16,22 +25,27 @@ public class Change {
 		totalImages = (lastListNum - startListNum) + 1;
 	}
 	
+	// Gets start image of change sequence
 	public int getStartListNum() {
 		return startListNum;
 	}
 	
+	// Gets last image before change
 	public int getLastListNum() {
 		return lastListNum;
 	}
 	
+	// Gets number of images within this change sequence
 	public int getTotalImages() {
 		return totalImages;
 	}
 	
+	// Gets the increments dispersed among all images in change sequence
 	public double getIncrements() {
 		return increments;
 	}
 	
+	// Sets start image of change sequence
 	public void setStartListNum(int sln) {
 		startListNum = sln;
 	}
@@ -40,6 +54,7 @@ public class Change {
 		lastListNum = pln;
 	}
 	
+	// Updates xmp file (settings) of all images within change sequence
 	public void updateMetadata(String key) {
 		// Gets start value of change
 		double startValue = Double.parseDouble(util.find(images.get(startListNum).getXMP(), key));

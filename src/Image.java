@@ -1,5 +1,11 @@
 import java.io.File;
 
+/* This class stores all data for one image. Each image is created
+ * as an object with this class to organize the data easily. 
+ * 
+ * by Devon Crawford
+ */
+
 public class Image {
 	
 	Util util = new Util();
@@ -11,25 +17,18 @@ public class Image {
 		fileName = n;
 	}
 	
+	// Initialize object
 	public Image(String n, String folder) {
 		listNum = 0;
 		fileName = n;
-		filePath = folder + n;
+		filePath = folder + "\\" + n;
 		exposureOffset = 0;
 		
-		xmpPath = folder;
-		
-		// Gets xmp file name from image
-		for (int k = 0; k < fileName.length(); k++) {
-			if (fileName.charAt(k) != '.') {
-				xmpPath += fileName.charAt(k);
-			} else {
-				xmpPath += ".xmp";
-				break;
-			}
-		}
+		xmpPath = "";
+		xmpPath += folder + "\\" + util.getXMPName(n);
 	}
 	
+	// Initialize object
 	public Image(Util util) {
 		this.util = util;
 		fileName = "";
@@ -38,22 +37,27 @@ public class Image {
 		exposureOffset = 0;
 	}
 	
+	// Returns string file path
 	public String getFilePath() {
 		return filePath;
 	}
 	
+	// Returns File object of image file
 	public File getFile() {
 		return new File(filePath);
 	}
 	
+	// Returns XMP file of image
 	public File getXMP() {
 		return new File(xmpPath);
 	}
 	
+	// Returns path to XMP file
 	public String getDataPath() {
 		return xmpPath;
 	}
 	
+	// Returns list number of image in sequence
 	public int getListNum() {
 		return listNum;
 	}
@@ -62,6 +66,7 @@ public class Image {
 		return shutterSpeed;
 	}
 	
+	// Calculates double shutter value from fractional value
 	public void calcShutterNum() {
 		String numS = shutterSpeed.substring(0, shutterSpeed.indexOf('/'));
 		String denS = shutterSpeed.substring(numS.length() + 1, shutterSpeed.length());
@@ -71,10 +76,12 @@ public class Image {
 		shutterNum = ((num + 0.00000000)/den);
 	}
 	
+	// Gets double shutter value
 	public double getShutterNum() {
 		return shutterNum;
 	}
 	
+	// Gets exposure offset (processed value)
 	public double getExposureOffset() {
 		return exposureOffset;
 	}
@@ -87,10 +94,12 @@ public class Image {
 		return iso;
 	}
 	
+	// Gets white balance value
 	public int getWhiteBalance() {
 		return whiteBalance;
 	}
 	
+	// Gets name of file
 	public String getName() {
 		return fileName;
 	}
@@ -99,10 +108,12 @@ public class Image {
 		return ratio;
 	}
 	
+	// Sets location in image sequence
 	public void setListNum(int n) {
 		listNum = n;
 	}
 	
+	// Sets name of file
 	public void setName(String n) {
 		fileName = n;
 	}
@@ -127,6 +138,7 @@ public class Image {
 		exposureOffset = e;
 	}
 	
+	// Prints all information of image
 	public void printInfo() {
 		System.out.println("File Name: " + fileName);
 		System.out.println("File Path: " + filePath);
