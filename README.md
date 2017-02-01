@@ -8,12 +8,15 @@ My algorithm simply looks for changes in shutter speed, aperture, iso, then math
 
 ![examples](https://cloud.githubusercontent.com/assets/25334129/22401628/1e86ca5a-e5a9-11e6-904b-ace3d74c7ed5.gif)
 
-How to use:
-  - manually change camera settings when shooting to achieve good lighting
-  - this will create a flicker during the timelapse, but my program is made to even out this change
+How to shoot: 
+  - manually change camera settings when shooting to achieve good lighting (this will create a flicker during the timelapse, but my program is made to even out this change)
   - edit images in photostop lightroom, be sure to SAVE METADATA TO FILE, which creates .xmp files for my program to use
-  - go into main class "proRaw.java", set the folder to specified location of images
-  - set startImage to the first image number in sequence
+
+How to use:
+  - open up command prompt / terminal
+  - cd to location of program (ex. cd Downloads)
+  - run by typing "java -jar proRAW.jar"
+  - input the file path of the first image
   
 debugging:
   - comment out updateMetadata(); to stop overwriting of new exposure metadata
